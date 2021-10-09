@@ -35,7 +35,7 @@ const DIR_MAPPING = {
   submit: 'EAS Submit',
   'technical-specs': 'Technical Specs',
   accounts: 'Expo Accounts',
-  clients: 'Development Clients',
+  development: 'Development Builds',
   archived: 'Archived',
   faq: 'FAQ',
   troubleshooting: 'Troubleshooting',
@@ -141,9 +141,9 @@ let previewDirectories = ['preview']; // a private preview section which isn't l
 let featurePreviewDirectories = ['feature-preview']; // a public preview section which is linked under `Feature Preview`
 
 if (isDevClientInFeaturePreview) {
-  featurePreviewDirectories = [...featurePreviewDirectories, 'clients'];
+  featurePreviewDirectories = [...featurePreviewDirectories, 'development'];
 } else {
-  previewDirectories = [...previewDirectories, 'clients'];
+  previewDirectories = [...previewDirectories, 'development'];
 }
 
 // Find any directories that aren't reference or starting directories. Also exclude the api
